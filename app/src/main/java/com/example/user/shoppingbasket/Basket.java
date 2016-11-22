@@ -51,10 +51,4 @@ public class Basket {
         return total;
     }
 
-//    public void deduct10Percent() {
-//        if (totalPrice() > 20.00) {
-//            totalPrice() * 0.9;
-//        }
-//    }
-
 }

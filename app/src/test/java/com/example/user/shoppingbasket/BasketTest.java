@@ -65,9 +65,4 @@ public class BasketTest {
         assertEquals(3, basket.itemCount());
     }
 
-//    @Test
-//    public void canDeduct10PercentOnTotalsOver£20() {
-//        basket.deduct10Percent();
-//        assertEquals(2.70, basket.totalPrice());
-//    }
 }
