@@ -8,6 +8,7 @@ import java.util.ArrayList;
 
 public class Basket {
     private ArrayList<Item> items;
+//    private Customer customer;
 
     public Basket() {
         this.items = new ArrayList<Item>();
@@ -40,12 +41,15 @@ public class Basket {
         }
     }
 
-    public double totalPrice() {
+    public double totalPrice(Customer customer) {
         double total = 0;
         for (Item item : items) {
             total += item.getPrice();
             if (total > 20.00) {
                 total = total * 0.9;
+                if (customer.hasLoyaltyCard()) {
+                    total = total * 0.98;
+                }
             }
         }
         return total;

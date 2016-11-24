@@ -31,13 +31,13 @@ public class ItemTest {
 
     @Test
     public void canGetPrice() {
-        assertEquals(1.49, item.getPrice());
+        assertEquals(1.49, item.getPrice(), 0.01);
     }
 
     @Test
     public void canSetPrice() {
         item.setPrice(1.59);
-        assertEquals(1.59, item.getPrice());
+        assertEquals(1.59, item.getPrice(), 0.01);
     }
 
     @Test
